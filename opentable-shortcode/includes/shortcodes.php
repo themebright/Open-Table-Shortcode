@@ -4,7 +4,7 @@
  */
 
 /**
- * Open Table Widget shortcode.
+ * OpenTable Widget shortcode.
  *
  * @param  array  $atts Shortcode configuration attributes pulled from shortcode instance.
  * @return string       Widget script embed if restaurant ID has been specified, error message if not.
@@ -21,7 +21,7 @@ function ots_shortcode_widget( $atts = array() ) {
 
 	// If no restaurant ID has been specified, return an error message
 	if ( ! $atts['restaurant-id'] ) {
-		return sprintf( '<p>%s</p>', esc_html__( 'Error: Please specify your Open Table restaurant ID in the shortcode.', 'open-table-shortcode' ) );
+		return sprintf( '<p>%s</p>', esc_html__( 'Error: Please specify your OpenTable restaurant ID in the shortcode.', 'opentable-shortcode' ) );
 	}
 
 	// Build the embed URL
@@ -42,4 +42,4 @@ function ots_shortcode_widget( $atts = array() ) {
 	return "<script type='text/javascript' src='$url'></script>";
 
 }
-add_shortcode( 'open-table-widget', 'ots_shortcode_widget' );
+add_shortcode( 'opentable-widget', 'ots_shortcode_widget' );

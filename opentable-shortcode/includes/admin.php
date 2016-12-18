@@ -12,7 +12,7 @@ function ots_admin_assets() {
 
 	wp_register_script(
 		'ots-admin',
-		esc_url( OTS_URL . 'open-table-shortcode/assets/js/admin.js' ),
+		esc_url( OTS_URL . 'opentable-shortcode/assets/js/admin.js' ),
 		array( 'jquery' ),
 		OTS_VERSION,
 		true
@@ -34,7 +34,7 @@ function ots_insert_button() {
 
 	?>
 
-	<a href="#TB_inline&inlineId=ots-modal" class="button thickbox" data-editor="content"><span class="wp-media-buttons-icon dashicons dashicons-feedback"></span> <?php esc_html_e( 'Insert Open Table Widget', 'open-table-widget' ); ?></a>
+	<a href="#TB_inline&inlineId=ots-modal" class="button thickbox" data-editor="content"><span class="wp-media-buttons-icon dashicons dashicons-feedback"></span> <?php esc_html_e( 'Insert OpenTable Widget', 'opentable-shortcode' ); ?></a>
 
 	<?php
 
@@ -52,13 +52,13 @@ function ots_modal() {
 	?>
 
 	<div id="ots-modal" style="display: none;">
-		<h2><?php echo esc_html_x( 'Insert Open Table Widget', 'widget config modal heading', 'open-table-shortcode' ); ?></h2>
-		<p><?php esc_html_e( 'Use the form below to configure your Open Table Widget.', 'open-table-shortcode' ); ?></p>
+		<h2><?php echo esc_html_x( 'Insert OpenTable Widget', 'widget config modal heading', 'opentable-shortcode' ); ?></h2>
+		<p><?php esc_html_e( 'Use the form below to configure your OpenTable Widget.', 'opentable-shortcode' ); ?></p>
 
 		<table id="ots-form" class="form-table">
 			<tbody>
 				<tr>
-					<th scope="row"><?php echo esc_html_x( 'Restaurant ID', 'widget restaurant heading', 'open-table-shortcode' ); ?></th>
+					<th scope="row"><?php echo esc_html_x( 'Restaurant ID', 'widget restaurant heading', 'opentable-shortcode' ); ?></th>
 
 					<td>
 						<input type="text" id="ots-restaurant-id" class="regular-text" value="">
@@ -66,7 +66,7 @@ function ots_modal() {
 				</tr>
 
 				<tr>
-					<th scope="row"><?php echo esc_html_x( 'Language', 'widget language heading', 'open-table-shortcode' ); ?></th>
+					<th scope="row"><?php echo esc_html_x( 'Language', 'widget language heading', 'opentable-shortcode' ); ?></th>
 
 					<td>
 						<select id="ots-language">
@@ -80,17 +80,17 @@ function ots_modal() {
 				</tr>
 
 				<tr>
-					<th scope="row"><?php echo esc_html_x( 'Type', 'widget type heading', 'open-table-shortcode' ); ?></th>
+					<th scope="row"><?php echo esc_html_x( 'Type', 'widget type heading', 'opentable-shortcode' ); ?></th>
 
 					<td>
 						<fieldset id="ots-type">
-							<legend class="screen-reader-text"><?php echo esc_html_x( 'Type', 'widget type heading', 'open-table-shortcode' ); ?></legend>
+							<legend class="screen-reader-text"><?php echo esc_html_x( 'Type', 'widget type heading', 'opentable-shortcode' ); ?></legend>
 
 							<label>
 								<input type="radio" name="ots-type" value="standard" checked>
 
 								<?php echo wp_kses(
-									_x( '<strong>Standard</strong> (224&times;289 pixels)', 'standard widget type label', 'open-table-shortcode' ),
+									_x( '<strong>Standard</strong> (224&times;289 pixels)', 'standard widget type label', 'opentable-shortcode' ),
 									$allowed_label_markup
 								); ?>
 							</label>
@@ -101,7 +101,7 @@ function ots_modal() {
 								<input type="radio" name="ots-type" value="tall">
 
 								<?php echo wp_kses(
-									_x( '<strong>Tall</strong> (280&times;477 pixels)', 'tall widget type label', 'open-table-shortcode' ),
+									_x( '<strong>Tall</strong> (280&times;477 pixels)', 'tall widget type label', 'opentable-shortcode' ),
 									$allowed_label_markup
 								); ?>
 							</label>
@@ -112,7 +112,7 @@ function ots_modal() {
 								<input type="radio" name="ots-type" value="wide">
 
 								<?php echo wp_kses(
-									_x( '<strong>Wide</strong> (832&times;154 pixels)', 'wide widget type label', 'open-table-shortcode' ),
+									_x( '<strong>Wide</strong> (832&times;154 pixels)', 'wide widget type label', 'opentable-shortcode' ),
 									$allowed_label_markup
 								); ?>
 							</label>
@@ -123,7 +123,7 @@ function ots_modal() {
 								<input type="radio" name="ots-type" value="button">
 
 								<?php echo wp_kses(
-									_x( '<strong>Button</strong> (210&times;106 pixels)', 'button widget type label', 'open-table-shortcode' ),
+									_x( '<strong>Button</strong> (210&times;106 pixels)', 'button widget type label', 'opentable-shortcode' ),
 									$allowed_label_markup
 								); ?>
 							</label>
@@ -133,7 +133,7 @@ function ots_modal() {
 			</tbody>
 		</table>
 
-		<p><button id="ots-insert" class="button button-primary"><?php echo esc_html_x( 'Insert Shortcode', 'insert shortcode button label', 'open-table-shortcode' ); ?></button></p>
+		<p><button id="ots-insert" class="button button-primary"><?php echo esc_html_x( 'Insert Shortcode', 'insert shortcode button label', 'opentable-shortcode' ); ?></button></p>
 	</div>
 
 	<?php
