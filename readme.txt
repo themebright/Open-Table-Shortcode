@@ -43,4 +43,4 @@ OpenTable will provide you with this.
 
 ## Changelog
 
-[Follow development on GitHub](http://github.com/themebright/OpenTable-Widget)
+[Follow development on GitHub](http://github.com/themebright/OpenTable-Shortcode)

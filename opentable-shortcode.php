@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: OpenTable Shortcode
- * Plugin URI:  https://github.com/themebright/opentable-shortcode
+ * Plugin URI:  https://github.com/themebright/OpenTable-Shortcode
  * Description: Embed the offical OpenTable widget via configurable shortcode.
  * Author:      ThemeBright
  * Author URI:  https://themebright.com/

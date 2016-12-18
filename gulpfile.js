@@ -10,29 +10,35 @@ var pkg = JSON.parse( fs.readFileSync( 'package.json' ) );
 gulp.task( 'translate', function() {
 	return gulp.src( '**/*.php' )
 		.pipe( wpPot( {
-			domain: 'opentable-shortcode',
+			domain: pkg.name,
 			package: 'OpenTable Widget Shortcode',
 		} ) )
-		.pipe( gulp.dest( 'opentable-shortcode/languages/opentable-shortcode.pot' ) );
+		.pipe( gulp.dest( pkg.name + '/languages/' + pkg.name + '.pot' ) );
 } )
 
 gulp.task( 'copy', [ 'translate' ], function( cb ) {
 	return gulp.src( [
   	'**',
+  	'!node_modules/',
   	'!node_modules/**',
   	'!gulpfile.js',
   	'!package.json',
+  	'!dotorg-assets/',
   	'!dotorg-assets/**'
   ] )
-  	.pipe( gulp.dest( 'temp/opentable-shortcode/' ) );
+  	.pipe( gulp.dest( 'temp/' + pkg.name + '/' ) );
 } );
 
 gulp.task( 'zip', [ 'copy' ], function() {
-	return gulp.src( 'temp/opentable-shortcode/**/*' )
+	return gulp.src( 'temp/' + pkg.name + '/**/*' )
 		.pipe( zip( pkg.name + '-' + pkg.version + '.zip' ) )
 		.pipe( gulp.dest( 'temp/' ) );
 } );
 
 gulp.task( 'export', [ 'zip' ], shell.task( 'mv temp/' + pkg.name + '-' + pkg.version + '.zip ~/Desktop/' ) );
 
-gulp.task( 'default', [ 'translate', 'copy', 'zip', 'export' ] );
+gulp.task( 'clean', [ 'export' ], function() {
+	return del( 'temp/' );
+} );
+
+gulp.task( 'default', [ 'translate', 'copy', 'zip', 'export', 'clean' ] );
