@@ -7,7 +7,7 @@ Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Embed the offical OpenTable widget via configurable shortcode.
+Embed the official OpenTable widget via configurable shortcode.
 
 ## Description
 
