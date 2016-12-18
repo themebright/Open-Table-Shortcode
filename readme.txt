@@ -28,6 +28,14 @@ Supports all 4 OpenTable embed types: Standard, Tall, Wide, and Button.
 
 1. Upload and activate the plugin.
 
+## Frequently Asked Questions
+
+**How do I center my widget?**<br>
+Select the shortcode text and then click Align Center in the editor toolbar.
+
+**Where do I get my restaraunt ID?**<br>
+OpenTable will provide you with this.
+
 ## Screenshots
 
 1. Quick insert button.
