@@ -1,15 +1,11 @@
 jQuery( function( $ ) {
 
-	var asdf = function() {
-		return $( '#ots-restaurant-id' ).val();
-	}
-
 	// When Insert button in the modal is clicked
 	$( '#ots-insert' ).on( 'click', function() {
 
 		// Get data from field values and
 		var data = {
-			restaurantId: asdf(),
+			restaurantId: $( '#ots-restaurant-id' ).val(),
 			language:     $( '#ots-language option:selected' ).val(),
 			type:         $( '#ots-type input:checked' ).val(),
 		};

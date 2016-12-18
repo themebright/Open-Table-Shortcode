@@ -1,37 +1,38 @@
-=== Open Table Shortcode ===
+# OpenTable Widget Shortcode
 Contributors: themebright, GalenGidman
-Tags: redirect, redirects, redirection, url, urls, url mask, url forwarder, url forward, bitly, forward url, url masker, link forwarder, forward link, link mask, short url, affiliate, affiliate links, affiliate mask, affiliate link, affiliate url
-Requires at least: 3.9
-Tested up to: 4.5.2
-Stable tag: 1.2.0
+Tags: opentable, open table, open table widget, opentable widget, open table shortcode, opentable shortcode, open table reservation, opentable reservation, restaurant reservation, table reservation, restaurant widget, reservation widget,
+Requires at least: 2.9
+Tested up to: 4.7
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A super-simple URL forwarder for WordPress.
+Embed the offical OpenTable widget via configurable shortcode.
 
-== Description ==
+## Description
 
-Go Redirects is a URL forwarder plugin for WordPress that enables URLs like `http://mysite.com/go/far-far-away/` to forward to URLs like `http://someothersite.com/`. It's a great way to create clean-looking affiliate links or provide permement links for remote URLs that may change over time. It includes analytics for the number of times a URL has been forwarded.
+This plugin enables you to easily embed [the official OpenTable reservation widget](https://www.otrestaurant.com/marketing/reservationwidget) into your WordPress site via shortcode. It features a quick insert button with a configuration modal so you don't have to remember syntax.
 
-== Installation ==
+Configuration settings include:
+
+**Restaraunt ID**<br>
+Your OpenTable restaraunt ID.
+
+**Language**<br>
+Embed your widget in English, Français, Español, Deutsch, or 日本語.
+
+**Type**<br>
+Supports all 4 OpenTable embed types: Standard, Tall, Wide, and Button.
+
+## Installation
 
 1. Upload and activate the plugin.
-2. Go to **Settings** → **Permalinks** and resave your permalink settings.
 
-== Frequently Asked Questions ==
+## Screenshots
 
-= I'm getting 404 errors when I try to visit my redirects. What do I do? =
+1. Quick insert button.
+2. Widget configuration modal.
 
-Go to Settings → Permalinks and resave your permalink settings.
+## Changelog
 
-= Can I change the redirects base URL slug from `/go/` to something else? =
-
-There is no setting to do so at this time. It is called Go Redirects after all. :)
-
-== Screenshots ==
-
-1. The redirect edit screen.
-
-== Changelog ==
-
-[Follow development on GitHub](http://github.com/galengidman/go-redirects)
+[Follow development on GitHub](http://github.com/themebright/OpenTable-Widget)
