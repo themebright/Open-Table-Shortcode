@@ -11,7 +11,7 @@ gulp.task( 'translate', function() {
 	return gulp.src( '**/*.php' )
 		.pipe( wpPot( {
 			domain: pkg.name,
-			package: 'OpenTable Widget Shortcode',
+			package: 'Shortcode for OpenTable Widget',
 		} ) )
 		.pipe( gulp.dest( pkg.name + '/languages/' + pkg.name + '.pot' ) );
 } )

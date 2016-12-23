@@ -1,9 +1,9 @@
-# OpenTable Widget Shortcode
+# Shortcode for OpenTable Widget
 Contributors: themebright, GalenGidman
 Tags: opentable, open table, open table widget, opentable widget, open table shortcode, opentable shortcode, open table reservation, opentable reservation, restaurant reservation, table reservation, restaurant widget, reservation widget,
 Requires at least: 2.9
 Tested up to: 4.7
-Stable tag: 1.1.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,4 +43,4 @@ OpenTable will provide you with this.
 
 ## Changelog
 
-[Follow development on GitHub](http://github.com/themebright/OpenTable-Shortcode)
+[Follow development on GitHub](https://github.com/themebright/Shortcode-for-OpenTable)

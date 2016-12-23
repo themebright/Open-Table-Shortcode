@@ -1,5 +1,5 @@
 {
-  "name": "opentable-shortcode",
+  "name": "shortcode-for-opentable",
   "version": "1.0.0",
   "private": true,
   "devDependencies": {

@@ -1,20 +1,20 @@
 jQuery( function( $ ) {
 
 	// When Insert button in the modal is clicked
-	$( '#ots-insert' ).on( 'click', function() {
+	$( '#sot-insert' ).on( 'click', function() {
 
 		// Get data from field values and
 		var data = {
-			restaurantId: $( '#ots-restaurant-id' ).val(),
-			language:     $( '#ots-language option:selected' ).val(),
-			type:         $( '#ots-type input:checked' ).val(),
+			restaurantId: $( '#sot-restaurant-id' ).val(),
+			language:     $( '#sot-language option:selected' ).val(),
+			type:         $( '#sot-type input:checked' ).val(),
 		};
 
 		// Create array to build shortcode
 		var shortcode = [];
 
 		// Opening tag
-		shortcode.push( '[open-table-widget' );
+		shortcode.push( '[opentable-widget' );
 
 		// Add restaraunt ID attr
 		shortcode.push( 'restaurant-id=' + data.restaurantId );
